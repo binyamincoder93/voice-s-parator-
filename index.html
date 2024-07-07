@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<body>
+    <h1>Bienvenue sur notre application de séparation de voix!</h1>
+    <p>Utilisez le formulaire ci-dessous pour uploader un fichier ou spécifiez une URL YouTube.</p>
+    <form action="/separate" method="POST" enctype="multipart/form-data">
+        <label for="file">Sélectionnez un fichier MP3 :</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+        <label for="url">URL YouTube :</label>
+        <input type="text" id="url" name="url">
+        <br><br>
+        <input type="submit" value="Séparer">
+    </form>
+</body>
+</html>
